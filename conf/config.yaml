@@ -1,0 +1,29 @@
+name: "web_app"
+mode: "dev"
+version: "v1.0"
+start_time: "2023-07-23"
+port: 9090
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "kxh19970301"
+  dbname: "bluebell"
+  max_openConns: 100
+  max_idleConns: 50
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 50
